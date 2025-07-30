@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Exit"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
