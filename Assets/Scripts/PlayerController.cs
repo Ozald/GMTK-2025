@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,7 +39,6 @@ public class PlayerController : MonoBehaviour
         Collider2D ground = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckMask);
         if (ground != null && canJump && pressedSpace)
         {
-            Debug.Log("Jumped");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
     }
@@ -47,5 +47,13 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
             rb.velocity = new Vector2(moveDir * movementSpeed, rb.velocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
