@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [Header("Config")]
     public float movementSpeed = 5f;
     public float jumpPower = 5f;
+    public bool pauseMovement = false;
 
     [Header("Abilities")]
     public bool canJump = true;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
         pressedSpace = Input.GetKeyDown(KeyCode.Space);
 
         Collider2D ground = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckMask);
-        if (ground != null && canJump && pressedSpace)
+        if (ground != null && canJump && pressedSpace && !pauseMovement)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (canMove)
+        if (canMove && !pauseMovement)
             rb.velocity = new Vector2(moveDir * movementSpeed, rb.velocity.y);
     }
 
@@ -64,5 +65,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = respawnPoint.position;
         }
+    }
+
+    public void EnableMovement()
+    {
+        pauseMovement = false;
     }
 }

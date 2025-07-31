@@ -28,7 +28,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public IEnumerator PlayDialogueQueue()
+    public void BeginDialogueQueue()
+    {
+        StartCoroutine("PlayDialogueQueue");
+    }
+
+    private IEnumerator PlayDialogueQueue()
     {
         foreach (DialogueEvent dialogueEvent in dialogueQueue)
         {
