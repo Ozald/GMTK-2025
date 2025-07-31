@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CircleController : MonoBehaviour
+public class G9Circle : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float moveDir = 0f;
