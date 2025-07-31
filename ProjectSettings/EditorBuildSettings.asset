@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Gimmicks/G1.unity
+    guid: ac72fbe8999ff1940bf219dd8cd99bc7
   - enabled: 1
-    path: Assets/Scenes/SampleScene 1.unity
-    guid: 61ce2d0c3951843488efd64222503d94
+    path: Assets/Scenes/Gimmicks/G2.unity
+    guid: 0e25b3398674d874d83220b30d64f1b2
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G3.unity
+    guid: fbe0a2067a9ca8e40841c1849502e36e
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G4.unity
+    guid: 57b4076f39c08424593bbe4f91046dd7
   m_configObjects: {}
