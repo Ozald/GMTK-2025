@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundCheckMask;
+    public Transform respawnPoint;
 
     [Header("Config")]
     public float movementSpeed = 5f;
@@ -54,6 +55,14 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Exit"))
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hazard"))
+        {
+            transform.position = respawnPoint.position;
         }
     }
 }
