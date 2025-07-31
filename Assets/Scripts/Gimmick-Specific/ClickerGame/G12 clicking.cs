@@ -7,14 +7,26 @@ using UnityEngine;
 public class G12clicking : MonoBehaviour
 {
     public float totalPoints;
+    public float pointsPerClick = 1;
+    public float clickPerSec = 0;
     public TextMeshProUGUI text;
 
     private void Update()
     {
         text.text = "Total points: " + totalPoints;
+        
     }
     private void OnMouseDown()
     {
-        totalPoints++;
+        totalPoints += pointsPerClick;
+    }
+
+    private IEnumerator Start()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            totalPoints += clickPerSec;
+        }
     }
 }
