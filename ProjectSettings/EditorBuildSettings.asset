@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gimmicks/G4.unity
     guid: 57b4076f39c08424593bbe4f91046dd7
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G5.unity
+    guid: fcdaeadab5a452e4ab4aa839e250f817
   m_configObjects: {}
