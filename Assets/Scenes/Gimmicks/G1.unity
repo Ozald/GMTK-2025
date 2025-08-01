@@ -3826,7 +3826,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 274290519}
   movementSpeed: 5
   jumpPower: 5
-  pauseMovement: 0
+  pauseMovement: 1
   canJump: 1
   canMove: 1
 --- !u!50 &593722707

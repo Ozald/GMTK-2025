@@ -39,6 +39,16 @@ public class PlayerController : MonoBehaviour
         pressedSpace = Input.GetKeyDown(KeyCode.Space);
 
         Collider2D ground = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckMask);
+
+        if (moveDir > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (moveDir < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
         if (ground != null && canJump && pressedSpace && !pauseMovement)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
