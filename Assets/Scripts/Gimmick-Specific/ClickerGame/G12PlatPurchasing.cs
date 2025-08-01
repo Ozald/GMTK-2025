@@ -19,6 +19,7 @@ public class G12PlatPurchasing : MonoBehaviour
         {
             clickerScript.totalPoints -= purchaseAmount;
             platformBought = true;
+            Destroy(gameObject);
         }
     }
 }
