@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundCheckMask;
     public Transform respawnPoint;
+    public ParticleSystem walkParticles;
 
     [Header("Config")]
     public float movementSpeed = 5f;
@@ -40,18 +41,28 @@ public class PlayerController : MonoBehaviour
 
         Collider2D ground = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundCheckMask);
 
-        if (moveDir > 0)
+        if (!pauseMovement)
         {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (moveDir < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+            if (moveDir > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (moveDir < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
 
-        if (ground != null && canJump && pressedSpace && !pauseMovement)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            if (ground != null)
+            {
+                if (canJump && pressedSpace)
+                    rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+
+                walkParticles.enableEmission = true;
+            }
+            else
+            {
+                walkParticles.enableEmission = false;
+            }
         }
     }
 
