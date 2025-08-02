@@ -3663,8 +3663,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   respawnPoint: {fileID: 274290519}
-  movementSpeed: 5
-  jumpPower: 5
+  walkParticles: {fileID: 0}
+  movementSpeed: 6
+  jumpPower: 7
+  pauseMovement: 0
   canJump: 1
   canMove: 1
 --- !u!50 &593722707
