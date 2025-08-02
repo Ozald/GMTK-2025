@@ -20,4 +20,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gimmicks/G5.unity
     guid: fcdaeadab5a452e4ab4aa839e250f817
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G6.unity
+    guid: 5a4e342c735d2df4da25d8616d5df928
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G7.unity
+    guid: 9d88c91459e00c146b4d6606d4ebd3ed
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G8.unity
+    guid: 71937aead01d2e649b745efef84217e0
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G9.unity
+    guid: b4eb59d9a3ce0b74faf991a69c9c90d2
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G10.unity
+    guid: e0c66e7f9c5fccb42aab6e0451e91008
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G11.unity
+    guid: 34e0e0c444852e84cbb0149de498b7fc
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G12.unity
+    guid: 2ba0a5a5bcdd05d43b93f8275fa0de8b
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G13.unity
+    guid: d97ab71af6121f6479041a4e80b26705
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G14.unity
+    guid: aaab35256aa9435408935b6cdd1cd0e1
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G15.unity
+    guid: 7db981fe7a226c9439aad6e7eadabf5f
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G16.unity
+    guid: ed77c8d0414832d48976593310e5da5b
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G17.unity
+    guid: cacf7007e1e7b7f4388ab457aef1a610
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/G18.unity
+    guid: 288cae7c7b3713e40a4ab0cdc8cc5b69
   m_configObjects: {}

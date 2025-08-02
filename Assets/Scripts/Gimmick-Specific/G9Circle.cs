@@ -54,17 +54,17 @@ public class G9Circle : MonoBehaviour
             rb.velocity = new Vector2(moveDir * movementSpeed, rb.velocity.y);
             float speed = rb.velocity.magnitude;
 
-            if (speed > 0.5)
+            if (speed > 0.05)
             {
                 transform.Rotate(-1 * moveDir * Vector3.forward * speed * rotationSpeed * Time.fixedDeltaTime);
             }
             else
             {
-                transform.Rotate(0,0,0);
+                transform.Rotate(0, 0, 0);
                 rb.angularVelocity = 0;
             }
 
-            
+
         }
     }
 
