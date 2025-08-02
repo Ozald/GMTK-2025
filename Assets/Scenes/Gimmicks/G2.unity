@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &521816422
+--- !u!43 &631931472
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,7 +288,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &6329751342823033977
+--- !u!1001 &1223029963
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -299,7 +299,11 @@ PrefabInstance:
     - target: {fileID: 1797792718905652487, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 521816422}
+      objectReference: {fileID: 631931472}
+    - target: {fileID: 1797792718905652487, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_InstanceId
+      value: -107224
+      objectReference: {fileID: 0}
     - target: {fileID: 7468736087777653378, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Name
       value: Hallway Setup
@@ -353,4 +357,4 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 6329751342823033977}
+  - {fileID: 1223029963}
