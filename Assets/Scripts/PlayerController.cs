@@ -15,22 +15,27 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundCheckMask;
     public Transform respawnPoint;
+    public CameraShake camera;
+
+    [Header("Particles")]
     public ParticleSystem walkParticles;
+    public ParticleSystem deathParticles;
 
     [Header("Config")]
     public float movementSpeed = 5f;
     public float jumpPower = 5f;
-    public bool pauseMovement = false;
+    public bool pauseMovement = true;
 
     [Header("Abilities")]
     public bool canJump = true;
     public bool canMove = true;
 
-
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        pauseMovement = true;
+        walkParticles.enableEmission = false;
     }
 
     // Update is called once per frame
@@ -84,8 +89,27 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Hazard"))
         {
-            transform.position = respawnPoint.position;
+            StartCoroutine(Respawn());
         }
+    }
+
+    public IEnumerator Respawn()
+    {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.enabled = false;
+        pauseMovement = true;
+        rb.isKinematic = true;
+        rb.velocity = Vector3.zero;
+        walkParticles.enableEmission = false;
+
+        deathParticles.Play();
+        camera.StartShake(0.2f, 0.1f);
+        yield return new WaitForSeconds(1f);
+
+        transform.position = respawnPoint.position;
+        renderer.enabled = true;
+        pauseMovement = false;
+        rb.isKinematic = false;
     }
 
     public void EnableMovement()
