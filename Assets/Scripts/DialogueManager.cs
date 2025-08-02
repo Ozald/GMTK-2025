@@ -14,7 +14,7 @@ public struct DialogueEvent
 
 public class DialogueManager : MonoBehaviour
 {
-   
+    public AudioSource audioSource;
     public TextMeshProUGUI subtitles;
     public bool playOnStart = true;
     public List<DialogueEvent> dialogueQueue = new List<DialogueEvent>();
@@ -30,6 +30,7 @@ public class DialogueManager : MonoBehaviour
 
     public void BeginDialogueQueue()
     {
+        audioSource.Play();
         StartCoroutine("PlayDialogueQueue");
     }
 
