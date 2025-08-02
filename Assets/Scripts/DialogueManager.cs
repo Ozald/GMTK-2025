@@ -30,7 +30,9 @@ public class DialogueManager : MonoBehaviour
 
     public void BeginDialogueQueue()
     {
-        audioSource.Play();
+        if (audioSource != null)
+            audioSource.Play();
+
         StartCoroutine("PlayDialogueQueue");
     }
 
