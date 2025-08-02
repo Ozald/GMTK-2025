@@ -19,9 +19,9 @@ public class LightFlicker : MonoBehaviour
             yield return new WaitForSeconds(8f);
             for (int i = 0; i < 3; i++)
             {
-                light.enabled = false;
+                light.intensity = 0.3f;
                 yield return new WaitForSeconds(0.05f);
-                light.enabled = true;
+                light.intensity = 0.6f;
                 yield return new WaitForSeconds(0.05f);
             }
             
