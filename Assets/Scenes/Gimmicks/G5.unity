@@ -336,7 +336,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 864627342}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8969458119392707428, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2073849039898512364, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
@@ -563,7 +564,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!43 &606195425
+--- !u!43 &833913234
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

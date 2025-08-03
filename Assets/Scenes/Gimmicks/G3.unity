@@ -296,11 +296,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1704095325644684385, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
---- !u!43 &404739658
+--- !u!43 &599424995
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,7 +466,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &599424995
+--- !u!43 &1650503274
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
