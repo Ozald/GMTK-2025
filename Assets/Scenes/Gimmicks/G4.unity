@@ -416,7 +416,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &1628213601
+--- !u!43 &2051640692
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -749,6 +749,10 @@ PrefabInstance:
       propertyPath: m_InstanceId
       value: -484644
       objectReference: {fileID: 0}
+    - target: {fileID: 8463136504959656734, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e327f599488513a44803033756005a90, type: 2}
     - target: {fileID: 8463136504959656734, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_SceneBindings.Array.data[7].value
       value: 
