@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Gimmicks/G0.unity
+    guid: 11997fc496090a540b074bb760c37ce8
+  - enabled: 1
     path: Assets/Scenes/Gimmicks/G1.unity
     guid: ac72fbe8999ff1940bf219dd8cd99bc7
   - enabled: 1
