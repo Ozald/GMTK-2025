@@ -416,7 +416,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1093824807
+--- !u!43 &766829615
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -596,6 +596,10 @@ PrefabInstance:
     - target: {fileID: 1797792718905652487, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_InstanceId
       value: -479032
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431077340536880345, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: dialogueQueue.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6184384291501921471, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: audioSource

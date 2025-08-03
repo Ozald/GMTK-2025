@@ -21,6 +21,7 @@ public class G9Circle : MonoBehaviour
     public float movementSpeed = 5f;
     public float jumpPower = 5f;
     public float rotationSpeed = 5f;
+    public bool pauseMovement = true;
 
     [Header("Abilities")]
     public bool canJump = true;
@@ -48,22 +49,22 @@ public class G9Circle : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-        if (canMove)
+        if (canMove && !pauseMovement)
         {
-            rb.velocity = new Vector2(moveDir * movementSpeed, rb.velocity.y);
-            float speed = rb.velocity.magnitude;
+            rb.AddForce(new Vector2(moveDir * movementSpeed, 0));
+            float speed = rb.velocity.x;
 
-            if (speed > 0.05)
+            /*
+            if (Mathf.Abs(speed) > 0.05)
             {
-                transform.Rotate(-1 * moveDir * Vector3.forward * speed * rotationSpeed * Time.fixedDeltaTime);
+                transform.Rotate(-1 * speed * Vector3.forward * rotationSpeed * Time.fixedDeltaTime);
             }
             else
             {
                 transform.Rotate(0, 0, 0);
                 rb.angularVelocity = 0;
             }
-
+            */
 
         }
     }
@@ -82,5 +83,10 @@ public class G9Circle : MonoBehaviour
         {
             transform.position = respawnPoint.position;
         }
+    }
+
+    public void EnableMovement()
+    {
+        pauseMovement = false;
     }
 }

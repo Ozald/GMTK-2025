@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_InstanceId
       value: -109990
       objectReference: {fileID: 0}
+    - target: {fileID: 3431077340536880345, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: dialogueQueue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5274442642082950254, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -296,7 +300,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
---- !u!43 &599424995
+--- !u!43 &404739658
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,7 +465,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &961140084
+--- !u!43 &599424995
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

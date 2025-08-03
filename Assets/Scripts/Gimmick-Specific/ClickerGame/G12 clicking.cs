@@ -11,6 +11,7 @@ public class G12clicking : MonoBehaviour
     public float clickPerSec = 0;
     public TextMeshProUGUI text;
     public AudioSource audioSource;
+    public bool isClickable = false;
 
     private void Update()
     {
@@ -19,8 +20,11 @@ public class G12clicking : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        audioSource.Play();
-        totalPoints += pointsPerClick;
+        if (isClickable)
+        {
+            audioSource.Play();
+            totalPoints += pointsPerClick;
+        }
     }
 
     private IEnumerator Start()
@@ -30,5 +34,10 @@ public class G12clicking : MonoBehaviour
             yield return new WaitForSeconds(1f);
             totalPoints += clickPerSec;
         }
+    }
+
+    public void BeginClick()
+    {
+        isClickable = true;
     }
 }

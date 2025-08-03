@@ -416,7 +416,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &2051640692
+--- !u!43 &1831588330
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -731,6 +731,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4250017943605182034, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918601087994725340, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      propertyPath: dialogueQueue.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6035172716917496003, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}

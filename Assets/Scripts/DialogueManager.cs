@@ -44,7 +44,9 @@ public class DialogueManager : MonoBehaviour
 
         foreach (DialogueEvent dialogueEvent in dialogueQueue)
         {
-            subtitles.text = "";
+            if (dialogueEvent.delay > 0)
+                subtitles.text = "";
+
             yield return new WaitForSeconds(dialogueEvent.delay);
             subtitles.text = dialogueEvent.text;
             yield return new WaitForSeconds(dialogueEvent.duration);

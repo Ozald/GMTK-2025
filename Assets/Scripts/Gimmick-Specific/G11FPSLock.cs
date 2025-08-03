@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class G11FPSLock : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int targetFrameRate = 60;
     void Start()
     {
-        Application.targetFrameRate = 10;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Application.targetFrameRate = targetFrameRate;
     }
 }

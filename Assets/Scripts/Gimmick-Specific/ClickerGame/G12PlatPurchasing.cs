@@ -10,6 +10,7 @@ public class G12PlatPurchasing : MonoBehaviour
     public bool platformBought = false;
     public TextMeshProUGUI text;
     public AudioSource audioSource;
+    public DialogueManager dialogueManager;
     void Start()
     {
         
@@ -30,6 +31,11 @@ public class G12PlatPurchasing : MonoBehaviour
             clickerScript.totalPoints -= purchaseAmount;
             platformBought = true;
             Destroy(gameObject);
+        }
+
+        if (dialogueManager != null)
+        {
+            dialogueManager.BeginDialogueQueue();
         }
     }
 }

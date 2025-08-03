@@ -795,6 +795,52 @@ MonoBehaviour:
   platformBought: 0
   text: {fileID: 1763932229}
   audioSource: {fileID: 114317950}
+  dialogueManager: {fileID: 635585822}
+--- !u!1 &376773769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376773771}
+  - component: {fileID: 376773770}
+  m_Layer: 0
+  m_Name: FPSManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &376773770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376773769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2dca328f2bb5343bcb9a8417984830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFrameRate: 60
+--- !u!4 &376773771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376773769}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395319109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1358,7 @@ MonoBehaviour:
   platformBought: 0
   text: {fileID: 422309978}
   audioSource: {fileID: 114317950}
+  dialogueManager: {fileID: 0}
 --- !u!1 &445019466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1628,169 @@ MonoBehaviour:
   platformBought: 0
   text: {fileID: 1109580510}
   audioSource: {fileID: 114317950}
+  dialogueManager: {fileID: 4918601088914366409}
+--- !u!1 &635585819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635585820}
+  - component: {fileID: 635585822}
+  - component: {fileID: 635585821}
+  m_Layer: 0
+  m_Name: ExtraDialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635585820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635585819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429669685631282178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &635585821
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635585819}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9b62fcde90a3d044180be5cc9100b6c5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &635585822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635585819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253b6e3cb10c5fb488efa5574645aadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 635585821}
+  subtitles: {fileID: 4823270665466105661}
+  playOnStart: 0
+  dialogueDelay: 1
+  dialogueQueue:
+  - text: Okay, I'm back.
+    delay: 0
+    duration: 1.7
+    scriptToRunAtEnd: {fileID: 0}
+  - text: "I... I decided that we should engage in No Duck Policy\u2014"
+    delay: 0.7
+    duration: 5
+    scriptToRunAtEnd: {fileID: 0}
+  - text: 'if you ever find a duck somewhere, just call me over and I''ll... '
+    delay: 0
+    duration: 3.5
+    scriptToRunAtEnd: {fileID: 0}
+  - text: ...pay someone to handle it.
+    delay: 0
+    duration: 2.7
+    scriptToRunAtEnd: {fileID: 0}
 --- !u!1 &664779739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1925,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664779739}
   m_CullTransparentMesh: 1
---- !u!43 &714539703
+--- !u!43 &767465560
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3141,6 +3351,7 @@ GameObject:
   - component: {fileID: 1678402941}
   - component: {fileID: 1678402940}
   - component: {fileID: 1678402943}
+  - component: {fileID: 1678402944}
   m_Layer: 0
   m_Name: buzzer
   m_TagString: Untagged
@@ -3160,11 +3371,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb23c903617b514e85f48cbb1ce8f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPoints: 0
+  totalPoints: 100
   pointsPerClick: 1
   clickPerSec: 0
   text: {fileID: 1187339576}
   audioSource: {fileID: 1972907349}
+  isClickable: 0
 --- !u!212 &1678402941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3278,6 +3490,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4292169, y: 2.114007}
   m_EdgeRadius: 0
+--- !u!114 &1678402944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678402939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7c6c5a95f94d4d448b0bd3e666dcf9c2, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1678402940}
+          m_TargetAssemblyTypeName: G12clicking, Assembly-CSharp
+          m_MethodName: BeginClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1763932227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,7 +4030,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 635585820}
   m_Father: {fileID: 1832246939718901314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &518542505191386935
@@ -5873,7 +6116,7 @@ GameObject:
   - component: {fileID: 429669685631282178}
   - component: {fileID: 4918601088914366409}
   - component: {fileID: 5663816623598049373}
-  - component: {fileID: 5663816623598049374}
+  - component: {fileID: 5663816623598049376}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -13040,22 +13283,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253b6e3cb10c5fb488efa5574645aadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 5663816623598049376}
   subtitles: {fileID: 4823270665466105661}
   playOnStart: 0
   dialogueDelay: 0
   dialogueQueue:
   - text: You...You get the concept of this room.
     delay: 0
-    duration: 4
+    duration: 3
     scriptToRunAtEnd: {fileID: 0}
   - text: You do it.
     delay: 0
-    duration: 2
+    duration: 1
     scriptToRunAtEnd: {fileID: 0}
   - text: I... I think I'm going to sit over there... I need a second.
-    delay: 0
-    duration: 2
+    delay: 0.7
+    duration: 5
     scriptToRunAtEnd: {fileID: 0}
 --- !u!156049354 &4924070018429216639
 Grid:
@@ -13353,39 +13596,102 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 1
---- !u!114 &5663816623598049374
-MonoBehaviour:
+--- !u!82 &5663816623598049376
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073849038972524537}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253b6e3cb10c5fb488efa5574645aadf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  subtitles: {fileID: 4823270665466105661}
-  playOnStart: 0
-  dialogueDelay: 0
-  dialogueQueue:
-  - text: Okay, I'm back.
-    delay: 0
-    duration: 4
-    scriptToRunAtEnd: {fileID: 0}
-  - text: "I decided that we should engage in No Duck Policy\u2014"
-    delay: 0
-    duration: 2
-    scriptToRunAtEnd: {fileID: 0}
-  - text: 'if you ever find a duck somewhere, just call me over and I''ll... '
-    delay: 0
-    duration: 2
-    scriptToRunAtEnd: {fileID: 0}
-  - text: ...pay someone to handle it.
-    delay: 0
-    duration: 2
-    scriptToRunAtEnd: {fileID: 0}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e54e95d01626d894993bf6d48ae7c9f6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!212 &5708467114062974384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13462,7 +13768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5890264714042011891
 GameObject:
   m_ObjectHideFlags: 0
@@ -13677,6 +13983,18 @@ MonoBehaviour:
         - m_Target: {fileID: 6180406317220127360}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
           m_MethodName: EnableMovement
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+        - m_Target: {fileID: 1678402940}
+          m_TargetAssemblyTypeName: G12clicking, Assembly-CSharp
+          m_MethodName: BeginClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14151,7 +14469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!483693784 &6746885750326354260
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -14550,8 +14868,8 @@ MonoBehaviour:
   - {x: 9.000313, y: 5.000313, z: 0}
   - {x: 9.000313, y: -5.000313, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 714539703}
-  m_InstanceId: 56236
+  m_Mesh: {fileID: 767465560}
+  m_InstanceId: 82046
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 9.000313, y: 5.000313, z: 0}
@@ -19863,3 +20181,4 @@ SceneRoots:
   - {fileID: 193960608}
   - {fileID: 1972907350}
   - {fileID: 114317951}
+  - {fileID: 376773771}
