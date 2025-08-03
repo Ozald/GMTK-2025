@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     public bool canJump = true;
     public bool canMove = true;
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +97,7 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Respawn()
     {
+        audioSource.Play();
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
         renderer.enabled = false;
         pauseMovement = true;
