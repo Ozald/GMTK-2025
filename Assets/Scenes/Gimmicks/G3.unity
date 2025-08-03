@@ -131,6 +131,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0100932
+      objectReference: {fileID: 0}
+    - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9845009
+      objectReference: {fileID: 0}
+    - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.008152723
+      objectReference: {fileID: 0}
+    - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0018987656
+      objectReference: {fileID: 0}
     - target: {fileID: 1797792718905652487, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -305,7 +321,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
---- !u!43 &599424995
+--- !u!43 &346404540
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,7 +486,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &1387948745
+--- !u!43 &599424995
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
