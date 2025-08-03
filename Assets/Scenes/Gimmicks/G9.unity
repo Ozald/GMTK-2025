@@ -393,6 +393,10 @@ PrefabInstance:
       value: Platformer setup
       objectReference: {fileID: 0}
     - target: {fileID: 6180406316527124117, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      propertyPath: canExit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180406316527124117, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 559011774}
@@ -778,7 +782,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8417706, y: 2.1052814}
   m_EdgeRadius: 0
---- !u!43 &1092621954
+--- !u!43 &1618765129
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

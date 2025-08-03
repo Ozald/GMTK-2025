@@ -251,7 +251,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &702900496
+--- !u!43 &997901451
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1070,8 +1070,8 @@ MonoBehaviour:
   - {x: 9.000313, y: 5.000313, z: 0}
   - {x: 9.000313, y: -5.000313, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 702900496}
-  m_InstanceId: 67528
+  m_Mesh: {fileID: 997901451}
+  m_InstanceId: 43240
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 9.000313, y: 5.000313, z: 0}
@@ -8092,6 +8092,7 @@ MonoBehaviour:
   hasDied: 0
   canJump: 1
   canMove: 1
+  canExit: 1
 --- !u!82 &6397837546513743477
 AudioSource:
   m_ObjectHideFlags: 0

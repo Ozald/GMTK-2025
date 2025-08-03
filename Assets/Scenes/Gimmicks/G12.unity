@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &35310971
+--- !u!43 &458091969
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,6 +501,7 @@ MonoBehaviour:
   hasDied: 0
   canJump: 1
   canMove: 1
+  canExit: 1
 --- !u!212 &169313428524082890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2588,7 +2589,7 @@ Transform:
   m_GameObject: {fileID: 5245020465701475691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.316393, y: -0.58845335, z: -2.9909747}
+  m_LocalPosition: {x: -6.316393, y: -0.62, z: -2.9909747}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3459,7 +3460,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004381895, y: -0.0087041855}
+  m_Offset: {x: 0.0004143715, y: -0.0087041855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3470,7 +3471,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.41548872, y: 2.0617075}
+  m_Size: {x: 1.0006266, y: 2.0617075}
   m_EdgeRadius: 0
 --- !u!483693784 &3877974939092433481
 TilemapRenderer:
@@ -11084,8 +11085,8 @@ MonoBehaviour:
   - {x: 9.000313, y: 5.000313, z: 0}
   - {x: 9.000313, y: -5.000313, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 35310971}
-  m_InstanceId: 70764
+  m_Mesh: {fileID: 458091969}
+  m_InstanceId: 51238
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 9.000313, y: 5.000313, z: 0}
