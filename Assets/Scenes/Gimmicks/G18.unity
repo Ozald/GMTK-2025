@@ -638,7 +638,7 @@ MonoBehaviour:
     scriptToRunAtEnd: {fileID: 0}
   - text: "THIS PART ISN'T FINISHED YET\u2014"
     delay: 0
-    duration: 0.8
+    duration: 1
     scriptToRunAtEnd: {fileID: 1107203156}
 --- !u!82 &1107203155
 AudioSource:
@@ -1078,14 +1078,15 @@ MonoBehaviour:
     m_Bits: 8
   respawnPoint: {fileID: 0}
   camera: {fileID: 0}
+  audioSource: {fileID: 0}
   walkParticles: {fileID: 0}
   deathParticles: {fileID: 0}
   movementSpeed: 7
   jumpPower: 7
   pauseMovement: 1
+  hasDied: 0
   canJump: 1
   canMove: 1
-  audioSource: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
