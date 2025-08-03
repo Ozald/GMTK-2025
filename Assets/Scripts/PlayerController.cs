@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [Header("Abilities")]
     public bool canJump = true;
     public bool canMove = true;
+    public bool canExit = false;
 
     
 
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Exit"))
+        if (collision.gameObject.CompareTag("Exit") && canExit)
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         }

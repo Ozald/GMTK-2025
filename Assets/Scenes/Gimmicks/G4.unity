@@ -416,7 +416,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &2107026998
+--- !u!43 &1363393222
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -760,6 +760,10 @@ PrefabInstance:
     - target: {fileID: 6035172716917496003, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Name
       value: Platformer setup
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180406316527124117, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      propertyPath: canExit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6180406316527124117, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: audioSource
