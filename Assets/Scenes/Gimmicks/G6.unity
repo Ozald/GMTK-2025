@@ -154,6 +154,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65094762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6180406316527124117, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+  m_PrefabInstance: {fileID: 1017525635}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094b7802eb4fa4141adeb5895bd967bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &191917814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2073849039898512364, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
@@ -563,6 +574,10 @@ PrefabInstance:
       propertyPath: dialogueQueue.Array.data[0].scriptToRunAtEnd
       value: 
       objectReference: {fileID: 1328334413}
+    - target: {fileID: 4918601087994725340, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      propertyPath: dialogueQueue.Array.data[4].scriptToRunAtEnd
+      value: 
+      objectReference: {fileID: 1017525650}
     - target: {fileID: 6035172716917496003, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Name
       value: Platformer setup
@@ -656,6 +671,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2073849039898512364, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1017525649}
+    - targetCorrespondingSourceObject: {fileID: 2073849039898512364, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017525650}
   m_SourcePrefab: {fileID: 100100000, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
 --- !u!114 &1017525636 stripped
 MonoBehaviour:
@@ -806,6 +824,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1017525650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191917814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbed04de729b03240935ff38b1cc4781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 65094762}
 --- !u!1 &1328334411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1150,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &2102598802
+--- !u!43 &1619733388
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
