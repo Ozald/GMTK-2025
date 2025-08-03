@@ -241,19 +241,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Size.x
-      value: 1.0077963
+      value: 0.41548872
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Size.y
-      value: 2.005672
+      value: 2.0617075
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Offset.x
-      value: -0.007004261
+      value: -0.004381895
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Offset.y
-      value: -0.008687258
+      value: -0.0087041855
       objectReference: {fileID: 0}
     - target: {fileID: 4250017943605182034, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!43 &942807098
+--- !u!43 &991453583
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -765,7 +765,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &991453583
+--- !u!43 &1026643784
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

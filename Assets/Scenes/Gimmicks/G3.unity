@@ -133,19 +133,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Size.x
-      value: 1.0100932
+      value: 0.41548872
       objectReference: {fileID: 0}
     - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Size.y
-      value: 1.9845009
+      value: 2.0617075
       objectReference: {fileID: 0}
     - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Offset.x
-      value: -0.008152723
+      value: -0.004381895
       objectReference: {fileID: 0}
     - target: {fileID: 859739475838706756, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0018987656
+      value: -0.0087041855
       objectReference: {fileID: 0}
     - target: {fileID: 1797792718905652487, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_Mesh
@@ -321,7 +321,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
---- !u!43 &346404540
+--- !u!43 &599424995
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -486,7 +486,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &599424995
+--- !u!43 &1786914270
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

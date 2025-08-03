@@ -480,7 +480,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3296976733475306048, guid: 68de2f5aa0a70e847a124b2e7997d53b, type: 3}
   m_PrefabInstance: {fileID: 1167294309944712817}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1634136122
+--- !u!43 &1451996333
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1105,19 +1105,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Size.x
-      value: 0.99617386
+      value: 0.41548872
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Size.y
-      value: 1.9761314
+      value: 2.0617075
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Offset.x
-      value: 0.00526762
+      value: -0.004381895
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0036671162
+      value: -0.0087041855
       objectReference: {fileID: 0}
     - target: {fileID: 2123973751001266100, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_LocalPosition.x

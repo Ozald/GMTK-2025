@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &134104169
+--- !u!43 &117425815
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1268,7 +1268,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Size.x
-      value: 1.0205216
+      value: 0.41548872
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Size.y
@@ -1276,7 +1276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Offset.x
-      value: -0.0103132725
+      value: -0.004381895
       objectReference: {fileID: 0}
     - target: {fileID: 635851258147678903, guid: c0c8f32688f8cc44d8fe7a201989a966, type: 3}
       propertyPath: m_Offset.y

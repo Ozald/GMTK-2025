@@ -10350,7 +10350,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1406875781
+--- !u!43 &1412800190
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10769,19 +10769,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Size.x
-      value: 1.0142565
+      value: 0.41548872
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Size.y
-      value: 2.003256
+      value: 2.0617075
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Offset.x
-      value: 0.00526762
+      value: -0.004381895
       objectReference: {fileID: 0}
     - target: {fileID: 3766496953536802328, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_Offset.y
-      value: -0.0008536577
+      value: -0.0087041855
       objectReference: {fileID: 0}
     - target: {fileID: 4250017943605182034, guid: 5c1ec8c2cff3d2f4ca51e6a2f9ca076d, type: 3}
       propertyPath: m_LocalPosition.x
