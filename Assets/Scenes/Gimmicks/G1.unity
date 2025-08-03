@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!43 &599946433
+--- !u!43 &1278643561
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369623599917639537, guid: e92c9ce989f189543bb4cd520029fafb, type: 3}
       propertyPath: dialogueQueue.Array.data[3].text
-      value: THREE applicants to reach out to us.
+      value: ...THREE applicants to reach out to us.
       objectReference: {fileID: 0}
     - target: {fileID: 4369623599917639537, guid: e92c9ce989f189543bb4cd520029fafb, type: 3}
       propertyPath: dialogueQueue.Array.data[4].text
