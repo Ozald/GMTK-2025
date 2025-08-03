@@ -9,9 +9,12 @@ public class G8WallOpen : EventBehaviorScript
     public Transform endPoint;
     public float speed = 5f;
 
+    public AudioSource audioSource;
+
     private bool eventStarted;
     public override void StartEvent()
     {
+        audioSource.Play();
         eventStarted = true;
     }
 
@@ -19,8 +22,10 @@ public class G8WallOpen : EventBehaviorScript
     {
         if (eventStarted)
         {
+            
             if (wall.position != endPoint.position)
             {
+                
                 float step = speed * Time.deltaTime;
 
                 wall.position = Vector3.MoveTowards(wall.position, endPoint.position, step);
