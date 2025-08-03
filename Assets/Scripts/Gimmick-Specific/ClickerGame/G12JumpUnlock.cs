@@ -9,6 +9,8 @@ public class G12JumpUnlock : MonoBehaviour
     public G12clicking clickerScript;
     public PlayerController pc;
     public TextMeshProUGUI text;
+    public AudioSource audioSource;
+    public TextMeshProUGUI connectedText;
     void Start()
     {
 
@@ -22,8 +24,11 @@ public class G12JumpUnlock : MonoBehaviour
     // Update is called once per frame
     private void OnMouseDown()
     {
-        if (clickerScript.totalPoints > purchaseAmount)
+        if (clickerScript.totalPoints >= purchaseAmount)
         {
+            connectedText.text = "";
+            text.text = "";
+            audioSource.Play();
             clickerScript.totalPoints -= purchaseAmount;
             pc.canJump = true;
             Destroy(gameObject);

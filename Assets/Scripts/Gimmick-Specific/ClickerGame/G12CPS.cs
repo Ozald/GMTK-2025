@@ -10,6 +10,7 @@ public class G12CPS : MonoBehaviour
     public float purchaseAmount;
     public G12clicking clickerScript;
     public TextMeshProUGUI text;
+    public AudioSource audioSource;
     void Start()
     {
 
@@ -23,8 +24,9 @@ public class G12CPS : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (clickerScript.totalPoints > purchaseAmount)
+        if (clickerScript.totalPoints >= purchaseAmount)
         {
+            audioSource.Play();
             clickerScript.totalPoints -= purchaseAmount;
             purchaseAmount += 20;
             clickerScript.clickPerSec++;

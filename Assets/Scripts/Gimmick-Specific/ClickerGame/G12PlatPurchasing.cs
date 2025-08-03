@@ -9,6 +9,7 @@ public class G12PlatPurchasing : MonoBehaviour
     public G12clicking clickerScript;
     public bool platformBought = false;
     public TextMeshProUGUI text;
+    public AudioSource audioSource;
     void Start()
     {
         
@@ -22,8 +23,10 @@ public class G12PlatPurchasing : MonoBehaviour
     // Update is called once per frame
     private void OnMouseDown()
     {
-        if (clickerScript.totalPoints > purchaseAmount)
+        if (clickerScript.totalPoints >= purchaseAmount)
         {
+            text.text = "";
+            audioSource.Play();
             clickerScript.totalPoints -= purchaseAmount;
             platformBought = true;
             Destroy(gameObject);
