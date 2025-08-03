@@ -18,7 +18,7 @@ public class G12PPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Cost of upgrade: " + purchaseAmount;
+        text.text = "Cost: " + purchaseAmount;
     }
 
     private void OnMouseDown()
