@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gimmicks/G18.unity
     guid: 288cae7c7b3713e40a4ab0cdc8cc5b69
+  - enabled: 1
+    path: Assets/Scenes/Gimmicks/Outro.unity
+    guid: 4a3a24621a7da5f4c8c6793cc13ab105
   m_configObjects: {}

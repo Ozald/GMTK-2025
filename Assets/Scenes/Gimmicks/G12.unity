@@ -335,7 +335,7 @@ MonoBehaviour:
   canJump: 1
   canMove: 1
   audioSource: {fileID: 532474163}
---- !u!43 &1844772921
+--- !u!43 &1451469047
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9834,13 +9834,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   subtitles: {fileID: 4823270665619562906}
   playOnStart: 0
-  dialogueQueue:
-  - text: Gimmick 1 text
-    duration: 4
-    scriptToRunAtEnd: {fileID: 0}
-  - text: Dialogue 2 Test
-    duration: 2
-    scriptToRunAtEnd: {fileID: 0}
+  dialogueDelay: 0
+  dialogueQueue: []
 --- !u!156049354 &4924070018551138776
 Grid:
   m_ObjectHideFlags: 0
@@ -11200,8 +11195,8 @@ MonoBehaviour:
   - {x: 9.000313, y: 5.000313, z: 0}
   - {x: 9.000313, y: -5.000313, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 1844772921}
-  m_InstanceId: 41696
+  m_Mesh: {fileID: 1451469047}
+  m_InstanceId: 93150
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 9.000313, y: 5.000313, z: 0}
