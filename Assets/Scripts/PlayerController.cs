@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundCheckMask;
     public Transform respawnPoint;
     public CameraShake camera;
+    public AudioSource audioSource;
 
     [Header("Particles")]
     public ParticleSystem walkParticles;
@@ -25,12 +26,13 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 5f;
     public float jumpPower = 5f;
     public bool pauseMovement = true;
+    public bool hasDied = false;
 
     [Header("Abilities")]
     public bool canJump = true;
     public bool canMove = true;
 
-    public AudioSource audioSource;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -105,6 +107,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector3.zero;
         walkParticles.enableEmission = false;
 
+        hasDied = true;
         deathParticles.Play();
         camera.StartShake(0.2f, 0.1f);
         yield return new WaitForSeconds(1f);
@@ -113,6 +116,7 @@ public class PlayerController : MonoBehaviour
         renderer.enabled = true;
         pauseMovement = false;
         rb.isKinematic = false;
+        
     }
 
     public void EnableMovement()
