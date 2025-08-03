@@ -150,9 +150,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f3d851f25ea9464e93588ad92b54711, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5796525964aec3c46abfd42a195466f3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e9d4ab037db274cb1a45d8b16d7331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!43 &1258055497
+--- !u!43 &1752020257
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1070,8 +1070,8 @@ MonoBehaviour:
   - {x: 9.000313, y: 5.000313, z: 0}
   - {x: 9.000313, y: -5.000313, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 1258055497}
-  m_InstanceId: 112530
+  m_Mesh: {fileID: 1752020257}
+  m_InstanceId: 38736
   m_LocalBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 9.000313, y: 5.000313, z: 0}
@@ -1965,7 +1965,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eb2bc6a0ec2e3074992b85c8c6e85d61, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.389
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8083,14 +8083,15 @@ MonoBehaviour:
     m_Bits: 8
   respawnPoint: {fileID: 8424580969732725632}
   camera: {fileID: 3385830022511999591}
+  audioSource: {fileID: 266144229}
   walkParticles: {fileID: 4578461138011861761}
   deathParticles: {fileID: 9093691332318197301}
   movementSpeed: 6
   jumpPower: 7
   pauseMovement: 0
+  hasDied: 0
   canJump: 1
   canMove: 1
-  audioSource: {fileID: 266144229}
 --- !u!82 &6397837546513743477
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8103,7 +8104,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8ab0af7770e4414181babad288d04f7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
