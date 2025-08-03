@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 2039093775}
+    - target: {fileID: 6397837545572289214, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6584091526192477920, guid: 69fdd2bf4ba50d84d84fcbc3132099b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
@@ -466,7 +470,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &1650503274
+--- !u!43 &1387948745
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -658,9 +662,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f3d851f25ea9464e93588ad92b54711, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5796525964aec3c46abfd42a195466f3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
